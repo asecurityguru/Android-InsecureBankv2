@@ -1,0 +1,33 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+
+    defaultConfig {
+        applicationId "com.android.insecurebankv2"
+        minSdkVersion 15
+        targetSdkVersion 26
+        versionCode 2
+        versionName "2.0"
+        useLibrary 'org.apache.http.legacy'
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    // compile 'com.android.support:appcompat-v7:22.2.0'
+    implementation 'com.google.android.gms:play-services:7.5.0'
+    implementation 'com.github.marcohc:Toasteroid:2.1.4'
+}
+
+repositories {
+    maven {
+        url "https://jitpack.io"
+    }
+}
