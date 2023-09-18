@@ -1,55 +1,156 @@
-InsecureBankv2 Modified by ASG and Raghu
+InsecureBankv2 and Diva Vulnerable Apps - Mobile Security Testing Repo by ASG and Raghu
 ==========
 
-[![Black Hat Arsenal](https://www.toolswatch.org/badges/arsenal/2015.svg)](https://www.blackhat.com/eu-15/arsenal.html/)
+To understand the vulnerabilities on the mobile platform as growing number of users are using a personal smartphones and such devices have complex operations that we might not understand the vulnerability behind it. Today's lesson will be based on using Top 10 Mobile Vulnerabilities provided by OWASP as a guideline.
 
-[![Black Hat Arsenal](https://www.toolswatch.org/badges/arsenal/2016.svg)](https://www.blackhat.com/us-16/arsenal.html/)
+## Resources  
+## All In One Package
+- https://drive.google.com/open?id=0B_96EHY-E-1GX2JMbEVUaG5VWjg
+	- Android Emulator
+	- VM with Tools Installed
 
-This is a major update to one of my previous projects - "InsecureBank". This vulnerable Android application is named "InsecureBankv2" and is made for security enthusiasts and developers to learn the Android insecurities by testing this vulnerable application. Its back-end server component is written in python. It is compatible with Python2. The client component i.e. the Android InsecureBank.apk can be downloaded along with the source. The list of vulnerabilities that are currently included in this release are:
+## Files in the VM
+|                      | Windows           | Linux  | Mac |
+| ------------ |:-------------:|:-----:|:-----:|
+| **Genymotion** | https://dl.genymotion.com/releases/genymotion-2.8.0/genymotion-2.8.0-vbox.exe | https://dl.genymotion.com/releases/genymotion-2.8.0/genymotion-2.8.0-linux_x64.bin | https://dl.genymotion.com/releases/genymotion-2.8.0/genymotion-2.8.0.dmg |
+| **VirtualBox** | https://www.virtualbox.org/wiki/Downloads
+| Java JDK      | http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html |
+| Drozer          | https://labs.mwrinfosecurity.com/tools/drozer |
+| APK Studio  | http://www.vaibhavpandey.com/apkstudio/ |
+| JADX | https://github.com/skylot/jadx/releases/download/v0.6.0/jadx-0.6.0.zip |
+| APK Tool | https://bitbucket.org/iBotPeaches/apktool/downloads/apktool_2.2.0.jar |
 
-* Flawed Broadcast Receivers
-* Intent Sniffing and Injection
-* Weak Authorization mechanism
-* Local Encryption issues
-* Vulnerable Activity Components
-* Root Detection and Bypass
-* Emulator Detection and Bypass
-* Insecure Content Provider access
-* Insecure Webview implementation
-* Weak Cryptography implementation
-* Application Patching
-* Sensitive Information in Memory
-* Insecure Logging mechanism
-* Android Pasteboard vulnerability
-* Application Debuggable
-* Android keyboard cache issues
-* Android Backup vulnerability
-* Runtime Manipulation
-* Insecure SDCard storage
-* Insecure HTTP connections
-* Parameter Manipulation
-* Hardcoded secrets
-* Username Enumeration issue
-* Developer Backdoors
-* Weak change password implementation
+### Learning
+- https://www.owasp.org/index.php/Projects/OWASP_Mobile_Security_Project_-2015_Scratchpad
+- http://resources.infosecinstitute.com/cracking-damn-insecure-and-vulnerable-apps-diva-part-1/
+- http://w1a2d3s4q5e6.blogspot.sg/2016/08/diva-android-13input-validation-issues.html
+- http://resources.infosecinstitute.com/android-hacking-and-security-part-18-introduction-to-reverse-engineering/
+- http://resources.infosecinstitute.com/android-application-hacking-insecure-bank-part-1/
+- https://androidtamer.com/learn_android_security
+- https://www.owasp.org/index.php/OWASP_Mobile_Security_Project
 
-Below are some of the other vulnerabilities that I am working on currently - and will be added as soon as I make sure that it does not break any of the other existing features:
-* Weak Pseudo Random Implementation
-* Path Traversal
-* Local SQL Injection
-* Intent based Denial-Of-Service - SMS
-* LockScreen Bypass
-* Location Spoofing
-* Dead Code
+### Vulnerable Tools
+1. https://github.com/payatu/diva-android
+2. https://github.com/jackMannino/OWASP-GoatDroid-Project
+3. https://github.com/dineshshetty/Android-InsecureBankv2
+4. https://github.com/intrepidusgroup/ig-learner
+
+### Decompilers
+- APK Studio - https://bintray.com/vaibhavpandeyvpz/generic/apkstudio/view
+- https://github.com/skylot/jadx/releases
+- https://sourceforge.net/projects/dex2jar/
 
 
-If you are too impatient to use the application or read the usage guide then follow these steps:
+### Obfuscators
+- Comparisons - http://proguard.sourceforge.net/index.html#alternatives.html
+- ProGuard - http://proguard.sourceforge.net/
+- yGuard - http://www.yworks.com/products/yguard
+- DexGuard - https://www.guardsquare.com/dexguard
+	- String Encryption
 
-1) Download and install latest apk file
+### Attacking Tools
+- Dex2Jar - https://sourceforge.net/projects/dex2jar/files/dex2jar-2.0.zip/download
+- JD-GUI - https://github.com/java-decompiler/jd-gui/releases/download/v1.4.0/jd-gui-1.4.0.jar
+- APK-Tool - https://bitbucket.org/iBotPeaches/apktool/downloads/apktool_2.2.0.jar
+- http://www.vaibhavpandey.com/apkstudio/
+- Similiar to Kali - https://androidtamer.com/
+- https://labs.mwrinfosecurity.com/tools/drozer/
 
-2) Make sure that the AndroLab server is running
+### Securing Tools
+- https://www.owasp.org/index.php/OWASP_SeraphimDroid_Project
 
-3) Make sure Is machine-machine access allowed on your network. Firewall disabled. Open netcat on your machine and then adb into your emulator. Try to connect to the address from adb and see if you can reach the machine. If you can not - fix the network issue before trying. I can not help you fix your network issues sadly so please there is no point creating git issues for it. 
+### Debugging Compiled APK
+- https://blog.netspi.com/attacking-android-applications-with-debuggers/
 
-4) Use the credentials dinesh/Dinesh@123$ or jack/Jack@123$ and start using the application
 
+
+
+# Top 10 Vulnerabilities
+- M1 - Improper Platform Usage
+- M2 - Insecure Data Storage
+- M3 - Insecure Communication
+- M4 - Insufficient Cryptography
+- M5 - Insecure Authentication
+- M6 - Client Code Quality
+- M7 - Code Tampering
+- M8 - Reverse Engineering
+- M9 - Extraneous Functionality
+
+## M1  - Improper Platform Usage
+-  misuse of a platform feature
+- failure to use platform security controls
+- Examples
+	- Android intents
+	- Platform permissions 
+	- Misuse of TouchID, the Keychain
+	- some other security control that is part of the mobile operating system
+
+## M3 - Insecure Communication
+This covers poor handshaking, incorrect SSL versions, weak negotiation, cleartext communication of sensitive assets, etc.
+
+M1, M3, M5, M7, M10 - Slides
+M2, M4, M6, M8 - Workshop
+
+# Tips
+1. Logcat
+2. Reversed Code
+3. 
+
+# M1 - Improper Platform Usage
+Misuse of a platform feature or failure to use platform security controls. It might include Android intents, platform permissions, misuse of TouchID, the Keychain, or some other security control that is part of the mobile operating system. There are several ways that mobile apps can experience this risk.
+
+# M8 - Reverse Engineering
+### Resources
+- http://resources.infosecinstitute.com/cracking-damn-insecure-and-vulnerable-apps-diva-part-1/
+- http://resources.infosecinstitute.com/android-hacking-and-security-part-18-introduction-to-reverse-engineering/
+
+## Programs Required
+- Dex2Jar - https://sourceforge.net/projects/dex2jar/files/dex2jar-2.0.zip/download
+- JD-GUI - https://github.com/java-decompiler/jd-gui/releases/download/v1.4.0/jd-gui-1.4.0.jar
+- APK-Tool - https://bitbucket.org/iBotPeaches/apktool/downloads/apktool_2.2.0.jar
+
+## Steps
+### Reverse Engineer APK Files
+1. Run the following command in terminal on the APK
+
+``` bash
+sh dex2jar.sh diva-beta.apk
+```
+2. Once done, a jar file should be generated.
+3. Open the jar file using JD-GUI
+4. Now you have all the Java Files
+
+### Find AndroidManifest.xml
+AndroidManifest.xml contains all Android intents (pages) and permissions that the application provides.
+1. Run the following command in terminal
+
+```bash
+java -jar apktool_2.0.3.jar d diva-beta.apk -o output
+```
+2. Now you should see the XML Document!
+
+## Challenge 1 - Insecure Logging (DIVA Android)
+Sometimes developers keeps sensitive data logged into the developer console. Find a way to extract the information keyed in by the user
+
+Hint: logcat
+
+### Solution
+1. Run the following command in terminal
+
+``` bash
+$ adb logcat
+```
+2. Look for the following line in terminal
+
+``` java
+E/diva-log( 1695): Error while processing transaction with credit card: 0000000000
+```
+3. Open up JD-GUI to see the code causing this vulnerability
+
+# Android Storage Options
+https://developer.android.com/guide/topics/data/data-storage.html
+- Shared Preferences
+- SQLite Databases
+- Internal Storage
+- External Storage
+- Network Connection
