@@ -7,7 +7,6 @@ To understand the vulnerabilities on the mobile platform as growing number of us
 
 
 ## Useful Links
-|                      | Windows           | Linux  | Mac |
 | ------------ |:-------------:|:-----:|:-----:|
 | **Genymotion With VirtualBox** |https://dl.genymotion.com/releases/genymotion-3.5.0/genymotion-3.5.0-vbox.exe |
 | **VirtualBox** | https://www.virtualbox.org/wiki/Downloads
