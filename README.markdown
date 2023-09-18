@@ -7,16 +7,18 @@ To understand the vulnerabilities on the mobile platform as growing number of us
 
 
 ## Useful Links
-| ------------ |:-------------:|:-----:|:-----:|
-| **Genymotion With VirtualBox** |https://dl.genymotion.com/releases/genymotion-3.5.0/genymotion-3.5.0-vbox.exe |
-| **VirtualBox** | https://www.virtualbox.org/wiki/Downloads
-| Java JDK      | http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html |
-| MobSF          | https://github.com/MobSF/Mobile-Security-Framework-MobSF |
-| MobSF Guide | https://mobsf.github.io/docs/#/mobsf_docker |
-| JADX | https://github.com/skylot/jadx/releases/download/v0.6.0/jadx-0.6.0.zip |
-| APK Tool | https://bitbucket.org/iBotPeaches/apktool/downloads/apktool_2.8.0.jar |
-| OWASp Mobile Application Security | https://mas.owasp.org/ |
-| OWASP Mobile Testing Checklist | https://docs.google.com/spreadsheets/d/1MZIvJ5Aze-zpyzLvQZVwyzF0bKWRPfnEd7nqFeH2PfA/edit#gid=997157040 |
+
+**Genymotion With VirtualBox** -  https://dl.genymotion.com/releases/genymotion-3.5.0/genymotion-3.5.0-vbox.exe
+
+**VirtualBox** - https://www.virtualbox.org/wiki/Downloads
+
+**MobSF** - https://github.com/MobSF/Mobile-Security-Framework-MobSF
+
+**MobSF Guide** https://mobsf.github.io/docs/#/mobsf_docker
+
+**OWASP Mobile Application Security**https://mas.owasp.org/
+
+**OWASP Mobile Testing Checklist**https://docs.google.com/spreadsheets/d/1MZIvJ5Aze-zpyzLvQZVwyzF0bKWRPfnEd7nqFeH2PfA/edit#gid=997157040
 
 ### Learning
 - https://www.owasp.org/index.php/OWASP_Mobile_Security_Project
