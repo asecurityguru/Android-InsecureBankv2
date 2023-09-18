@@ -4,39 +4,29 @@ InsecureBankv2 and Diva Vulnerable Apps - Mobile Security Testing Repo by ASG an
 To understand the vulnerabilities on the mobile platform as growing number of users are using a personal smartphones and such devices have complex operations that we might not understand the vulnerability behind it. Today's lesson will be based on using Top 10 Mobile Vulnerabilities provided by OWASP as a guideline.
 
 ## Resources  
-## All In One Package
-- https://drive.google.com/open?id=0B_96EHY-E-1GX2JMbEVUaG5VWjg
-	- Android Emulator
-	- VM with Tools Installed
 
-## Files in the VM
+
+## Useful Links
 |                      | Windows           | Linux  | Mac |
 | ------------ |:-------------:|:-----:|:-----:|
-| **Genymotion** | https://dl.genymotion.com/releases/genymotion-2.8.0/genymotion-2.8.0-vbox.exe | https://dl.genymotion.com/releases/genymotion-2.8.0/genymotion-2.8.0-linux_x64.bin | https://dl.genymotion.com/releases/genymotion-2.8.0/genymotion-2.8.0.dmg |
+| **Genymotion With VirtualBox** |https://dl.genymotion.com/releases/genymotion-3.5.0/genymotion-3.5.0-vbox.exe |
 | **VirtualBox** | https://www.virtualbox.org/wiki/Downloads
 | Java JDK      | http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html |
-| Drozer          | https://labs.mwrinfosecurity.com/tools/drozer |
-| APK Studio  | http://www.vaibhavpandey.com/apkstudio/ |
+| MobSF          | https://github.com/MobSF/Mobile-Security-Framework-MobSF |
+| MobSF Guide | https://mobsf.github.io/docs/#/mobsf_docker |
 | JADX | https://github.com/skylot/jadx/releases/download/v0.6.0/jadx-0.6.0.zip |
-| APK Tool | https://bitbucket.org/iBotPeaches/apktool/downloads/apktool_2.2.0.jar |
+| APK Tool | https://bitbucket.org/iBotPeaches/apktool/downloads/apktool_2.8.0.jar |
+| OWASp Mobile Application Security | https://mas.owasp.org/ |
+| OWASP Mobile Testing Checklist | https://docs.google.com/spreadsheets/d/1MZIvJ5Aze-zpyzLvQZVwyzF0bKWRPfnEd7nqFeH2PfA/edit#gid=997157040 |
 
 ### Learning
-- https://www.owasp.org/index.php/Projects/OWASP_Mobile_Security_Project_-2015_Scratchpad
-- http://resources.infosecinstitute.com/cracking-damn-insecure-and-vulnerable-apps-diva-part-1/
-- http://w1a2d3s4q5e6.blogspot.sg/2016/08/diva-android-13input-validation-issues.html
-- http://resources.infosecinstitute.com/android-hacking-and-security-part-18-introduction-to-reverse-engineering/
-- http://resources.infosecinstitute.com/android-application-hacking-insecure-bank-part-1/
-- https://androidtamer.com/learn_android_security
 - https://www.owasp.org/index.php/OWASP_Mobile_Security_Project
 
 ### Vulnerable Tools
 1. https://github.com/payatu/diva-android
-2. https://github.com/jackMannino/OWASP-GoatDroid-Project
-3. https://github.com/dineshshetty/Android-InsecureBankv2
-4. https://github.com/intrepidusgroup/ig-learner
+2. https://github.com/dineshshetty/Android-InsecureBankv2
 
 ### Decompilers
-- APK Studio - https://bintray.com/vaibhavpandeyvpz/generic/apkstudio/view
 - https://github.com/skylot/jadx/releases
 - https://sourceforge.net/projects/dex2jar/
 
@@ -44,17 +34,11 @@ To understand the vulnerabilities on the mobile platform as growing number of us
 ### Obfuscators
 - Comparisons - http://proguard.sourceforge.net/index.html#alternatives.html
 - ProGuard - http://proguard.sourceforge.net/
-- yGuard - http://www.yworks.com/products/yguard
-- DexGuard - https://www.guardsquare.com/dexguard
-	- String Encryption
 
 ### Attacking Tools
 - Dex2Jar - https://sourceforge.net/projects/dex2jar/files/dex2jar-2.0.zip/download
 - JD-GUI - https://github.com/java-decompiler/jd-gui/releases/download/v1.4.0/jd-gui-1.4.0.jar
-- APK-Tool - https://bitbucket.org/iBotPeaches/apktool/downloads/apktool_2.2.0.jar
-- http://www.vaibhavpandey.com/apkstudio/
-- Similiar to Kali - https://androidtamer.com/
-- https://labs.mwrinfosecurity.com/tools/drozer/
+- APK-Tool - https://bitbucket.org/iBotPeaches/apktool/downloads/apktool_2.8.0.jar
 
 ### Securing Tools
 - https://www.owasp.org/index.php/OWASP_SeraphimDroid_Project
@@ -62,19 +46,17 @@ To understand the vulnerabilities on the mobile platform as growing number of us
 ### Debugging Compiled APK
 - https://blog.netspi.com/attacking-android-applications-with-debuggers/
 
-
-
-
-# Top 10 Vulnerabilities
-- M1 - Improper Platform Usage
-- M2 - Insecure Data Storage
-- M3 - Insecure Communication
-- M4 - Insufficient Cryptography
-- M5 - Insecure Authentication
-- M6 - Client Code Quality
-- M7 - Code Tampering
-- M8 - Reverse Engineering
-- M9 - Extraneous Functionality
+# Top 10 Vulnerabilities 2023
+- M1: Improper Credential Usage
+- M2: Inadequate Supply Chain Security
+- M3: Insecure Authentication/Authorization
+- M4: Insufficient Input/Output Validation
+- M5: Insecure Communication
+- M6: Inadequate Privacy Controls
+- M7: Insufficient Binary Protections
+- M8: Security Misconfiguration
+- M9: Insecure Data Storage
+- M10: Insufficient Cryptography
 
 # Android App Security Checklist
 
